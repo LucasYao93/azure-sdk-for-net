@@ -7,11 +7,9 @@ using System.Threading.Tasks;
 
 namespace Azure.ResourceManager.CosmosDB.Tests
 {
-    [TestFixture]
     public class OperationsTest : CosmosDBManagementClientBase
     {
-        public OperationsTest()
-            : base(true)
+        public OperationsTest(bool isAsync) : base(isAsync)
         {
         }
 
