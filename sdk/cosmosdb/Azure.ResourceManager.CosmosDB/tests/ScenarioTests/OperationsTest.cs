@@ -9,19 +9,28 @@ namespace Azure.ResourceManager.CosmosDB.Tests
 {
     public class OperationsTest : CosmosDBManagementClientBase
     {
+        private string location;
+
+        // using an existing DB account, since Account provisioning takes 10-15 minutes
+        private string resourceGroupName;
         public OperationsTest(bool isAsync) : base(isAsync)
         {
         }
-
+        private void GenerateRandomVariables()
+        {
+            location = CosmosDBTestUtilities.Location;
+            resourceGroupName = Recording.GenerateAssetName(CosmosDBTestUtilities.ResourceGroupPrefix);
+        }
         [SetUp]
         public async Task ClearAndInitialize()
         {
+            GenerateRandomVariables();
             if (Mode == RecordedTestMode.Record || Mode == RecordedTestMode.Playback)
             {
                 InitializeClients();
                 await CosmosDBTestUtilities.TryRegisterResourceGroupAsync(ResourceGroupsOperations,
-                    CosmosDBTestUtilities.Location,
-                    Recording.GenerateAssetName(CosmosDBTestUtilities.ResourceGroupPrefix));
+                    location,
+                    resourceGroupName);
             }
         }
 

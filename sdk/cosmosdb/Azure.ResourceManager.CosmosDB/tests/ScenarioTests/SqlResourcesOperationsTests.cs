@@ -47,8 +47,8 @@ namespace Azure.ResourceManager.CosmosDB.Tests
         private void GenerateRandomVariables()
         {
             location = CosmosDBTestUtilities.Location;
-            resourceGroupName = "cosmsdbrg-test-279";//Recording.GenerateAssetName(CosmosDBTestUtilities.ResourceGroupPrefix);
-            databaseAccountName = "cli7884";//Recording.GenerateAssetName("cli");
+            resourceGroupName = Recording.GenerateAssetName(CosmosDBTestUtilities.ResourceGroupPrefix);
+            databaseAccountName = Recording.GenerateAssetName("cosmosdb");
             databaseName = Recording.GenerateAssetName("databaseName");
             databaseName2 = Recording.GenerateAssetName("databaseName");
             containerName = Recording.GenerateAssetName("containerName");
@@ -75,8 +75,7 @@ namespace Azure.ResourceManager.CosmosDB.Tests
         [TearDown]
         public async Task CleanupResourceGroup()
         {
-            // await CleanupResourceGroupsAsync();
-            await Task.Delay(2000);
+            await CleanupResourceGroupsAsync();
         }
 
         [Test]

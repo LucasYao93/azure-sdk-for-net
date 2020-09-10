@@ -1,18 +1,18 @@
 {
   "Entries": [
     {
-      "RequestUri": "https://management.azure.com/subscriptions/c9cbd920-c00c-427c-852b-8aaf38badaeb/resourcegroups/cosmosdbrg-test-5382?api-version=2017-05-10",
+      "RequestUri": "https://management.azure.com/subscriptions/c9cbd920-c00c-427c-852b-8aaf38badaeb/resourcegroups/cosmosdbrg-test-5370?api-version=2017-05-10",
       "RequestMethod": "PUT",
       "RequestHeaders": {
         "Authorization": "Sanitized",
         "Content-Length": "22",
         "Content-Type": "application/json",
-        "traceparent": "00-38c8aae9b4cfd24493c15fcb9c3cbe9d-65b68bc45f8acc4d-00",
+        "traceparent": "00-12bdc46dd6258d42b8ddc6f9f4e70046-fbd97ed7efbe4b40-00",
         "User-Agent": [
           "azsdk-net-ResourceManager.CosmosDB.Tests/1.0.0-alpha.20200909.1",
           "(.NET Core 4.6.29130.01; Microsoft Windows 10.0.19041 )"
         ],
-        "x-ms-client-request-id": "9d79404b4d31445c241cc7a3e5326c24",
+        "x-ms-client-request-id": "29fba49aa2a030f571b4cc57eef641ce",
         "x-ms-return-client-request-id": "true"
       },
       "RequestBody": {
@@ -23,19 +23,19 @@
         "Cache-Control": "no-cache",
         "Content-Length": "193",
         "Content-Type": "application/json; charset=utf-8",
-        "Date": "Wed, 09 Sep 2020 08:30:05 GMT",
+        "Date": "Wed, 09 Sep 2020 08:29:56 GMT",
         "Expires": "-1",
         "Pragma": "no-cache",
         "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
         "X-Content-Type-Options": "nosniff",
-        "x-ms-correlation-request-id": "bbd3632f-7060-4263-a45b-c543e2b5dbf7",
-        "x-ms-ratelimit-remaining-subscription-writes": "1198",
-        "x-ms-request-id": "bbd3632f-7060-4263-a45b-c543e2b5dbf7",
-        "x-ms-routing-request-id": "SOUTHEASTASIA:20200909T083005Z:bbd3632f-7060-4263-a45b-c543e2b5dbf7"
+        "x-ms-correlation-request-id": "0973b934-9ed9-41bd-89a5-18ad689ae6b4",
+        "x-ms-ratelimit-remaining-subscription-writes": "1199",
+        "x-ms-request-id": "0973b934-9ed9-41bd-89a5-18ad689ae6b4",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20200909T082956Z:0973b934-9ed9-41bd-89a5-18ad689ae6b4"
       },
       "ResponseBody": {
-        "id": "/subscriptions/c9cbd920-c00c-427c-852b-8aaf38badaeb/resourceGroups/cosmosdbrg-test-5382",
-        "name": "cosmosdbrg-test-5382",
+        "id": "/subscriptions/c9cbd920-c00c-427c-852b-8aaf38badaeb/resourceGroups/cosmosdbrg-test-5370",
+        "name": "cosmosdbrg-test-5370",
         "location": "westus",
         "properties": {
           "provisioningState": "Succeeded"
@@ -51,7 +51,7 @@
           "azsdk-net-ResourceManager.CosmosDB/1.0.0-alpha.20200909.1",
           "(.NET Core 4.6.29130.01; Microsoft Windows 10.0.19041 )"
         ],
-        "x-ms-client-request-id": "652e9c25633df7637b797f8821b4c914",
+        "x-ms-client-request-id": "9a7e6c6dcc3fdb08def25d9e4f9273f7",
         "x-ms-return-client-request-id": "true"
       },
       "RequestBody": null,
@@ -61,16 +61,16 @@
         "Content-Length": "137222",
         "Content-Location": "https://management.documents.azure.com:450/providers/Microsoft.DocumentDB/operations?api-version=2020-04-01",
         "Content-Type": "application/json",
-        "Date": "Wed, 09 Sep 2020 08:30:09 GMT",
+        "Date": "Wed, 09 Sep 2020 08:30:00 GMT",
         "Pragma": "no-cache",
         "Server": "Microsoft-HTTPAPI/2.0",
         "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
         "X-Content-Type-Options": "nosniff",
-        "x-ms-correlation-request-id": "edd2dfc4-ee3b-4d7c-92d7-f0bd61e01f52",
+        "x-ms-correlation-request-id": "eff4899c-857a-4bb0-b72c-299700f5d307",
         "x-ms-gatewayversion": "version=2.11.0",
-        "x-ms-ratelimit-remaining-tenant-reads": "11998",
-        "x-ms-request-id": "edd2dfc4-ee3b-4d7c-92d7-f0bd61e01f52",
-        "x-ms-routing-request-id": "SOUTHEASTASIA:20200909T083009Z:edd2dfc4-ee3b-4d7c-92d7-f0bd61e01f52"
+        "x-ms-ratelimit-remaining-tenant-reads": "11999",
+        "x-ms-request-id": "eff4899c-857a-4bb0-b72c-299700f5d307",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20200909T083000Z:eff4899c-857a-4bb0-b72c-299700f5d307"
       },
       "ResponseBody": {
         "value": [
@@ -5830,7 +5830,7 @@
     }
   ],
   "Variables": {
-    "RandomSeed": "330372063",
+    "RandomSeed": "1516742576",
     "SUBSCRIPTION_ID": "c9cbd920-c00c-427c-852b-8aaf38badaeb"
   }
 }

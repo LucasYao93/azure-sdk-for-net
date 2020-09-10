@@ -12,6 +12,8 @@ using NUnit.Framework;
 
 namespace Azure.ResourceManager.CosmosDB.Tests
 {
+    //Message: The CosmosDB SDK does not support create the Cassandra type accoun.Becaue need to manually create a Cassandra type account.
+    //TODO: When SDK support.
     public class CassandraResourcesOperationsTests: CosmosDBManagementClientBase
     {
         private string location ;
@@ -41,9 +43,11 @@ namespace Azure.ResourceManager.CosmosDB.Tests
         }
         private void GenerateRandomVariables()
         {
-            location = CosmosDBTestUtilities.Location;
-            resourceGroupName = Recording.GenerateAssetName(CosmosDBTestUtilities.ResourceGroupPrefix);
-            databaseAccountName = Recording.GenerateAssetName("cli");
+            location = "West US"; //CosmosDBTestUtilities.Location;
+            //Recording.GenerateAssetName(CosmosDBTestUtilities.ResourceGroupPrefix)
+            resourceGroupName = "cosmosdbrg-test-8381";//Create manually
+            //Recording.GenerateAssetName("cosmos")
+            databaseAccountName = "cassandra-test01"; //Create manually
             keyspaceName = Recording.GenerateAssetName("keyspaceName");
             keyspaceName2 = Recording.GenerateAssetName("keyspaceName");
             tableName = Recording.GenerateAssetName("tableName");
@@ -67,7 +71,8 @@ namespace Azure.ResourceManager.CosmosDB.Tests
         [TearDown]
         public async Task CleanupResourceGroup()
         {
-            await CleanupResourceGroupsAsync();
+            // await CleanupResourceGroupsAsync();
+            await Task.Delay(2000);
         }
         [Test]
         public async Task CassandraCRUDTests()
@@ -76,8 +81,7 @@ namespace Azure.ResourceManager.CosmosDB.Tests
             CosmosDBManagementClient cosmosDBManagementClient = GetCosmosDBManagementClient();
 
             Response isDatabaseNameExists = await cosmosDBManagementClient.DatabaseAccounts.CheckNameExistsAsync(databaseAccountName);
-
-            if (isDatabaseNameExists.Status == 200)
+            if (isDatabaseNameExists.Status != 200)
             {
                 return;
             }
