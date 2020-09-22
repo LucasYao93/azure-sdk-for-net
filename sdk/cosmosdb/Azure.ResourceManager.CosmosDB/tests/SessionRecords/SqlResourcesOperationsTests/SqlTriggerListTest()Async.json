@@ -1,0 +1,108 @@
+{
+  "Entries": [
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/c9cbd920-c00c-427c-852b-8aaf38badaeb/resourceGroups/Default-CosmosDB-5063/providers/Microsoft.DocumentDB/databaseAccounts/cosmosdb8086/sqlDatabases/databaseName2439/containers/containerName331/triggers?api-version=2020-04-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Authorization": "Sanitized",
+        "User-Agent": [
+          "azsdk-net-ResourceManager.CosmosDB/1.0.0-alpha.20200922.1",
+          "(.NET Core 4.6.29220.03; Microsoft Windows 10.0.19041 )"
+        ],
+        "x-ms-client-request-id": "98f9d8de2de4cd97388311a34a756dbc",
+        "x-ms-return-client-request-id": "true"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-store, no-cache",
+        "Content-Length": "757",
+        "Content-Location": "https://management.documents.azure.com:450/subscriptions/c9cbd920-c00c-427c-852b-8aaf38badaeb/resourceGroups/Default-CosmosDB-5063/providers/Microsoft.DocumentDB/databaseAccounts/cosmosdb8086/sqlDatabases/databaseName2439/containers/containerName331/triggers?api-version=2020-04-01",
+        "Content-Type": "application/json",
+        "Date": "Tue, 22 Sep 2020 10:49:45 GMT",
+        "Pragma": "no-cache",
+        "Server": "Microsoft-HTTPAPI/2.0",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "87fd4e87-74d4-48f3-a4fe-8a391e1d9e2c",
+        "x-ms-gatewayversion": "version=2.11.0",
+        "x-ms-ratelimit-remaining-subscription-reads": "10420",
+        "x-ms-request-id": "87fd4e87-74d4-48f3-a4fe-8a391e1d9e2c",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20200922T104945Z:87fd4e87-74d4-48f3-a4fe-8a391e1d9e2c"
+      },
+      "ResponseBody": {
+        "value": [
+          {
+            "id": "/subscriptions/c9cbd920-c00c-427c-852b-8aaf38badaeb/resourceGroups/Default-CosmosDB-5063/providers/Microsoft.DocumentDB/databaseAccounts/cosmosdb8086/sqlDatabases/databaseName2439/containers/containerName331/triggers/triggerName5777",
+            "type": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers/triggers",
+            "name": "triggerName5777",
+            "properties": {
+              "resource": {
+                "id": "triggerName5777",
+                "body": "function () { var context = getContext(); var response = context.getResponse();response.setBody(\u0027Hello, World\u0027);}",
+                "triggerType": "Post",
+                "triggerOperation": "All",
+                "_rid": "7PkyAOFWsygBAAAAAAAAcA==",
+                "_self": "dbs/7PkyAA==/colls/7PkyAOFWsyg=/triggers/7PkyAOFWsygBAAAAAAAAcA==/",
+                "_etag": "\u0022e7061966-0000-0100-0000-5f69d6af0000\u0022",
+                "_ts": 1600771759
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/c9cbd920-c00c-427c-852b-8aaf38badaeb/resourceGroups/Default-CosmosDB-5063/providers/Microsoft.DocumentDB/databaseAccounts/cosmosdb8086/sqlDatabases/databaseName2439/containers/containerName331/triggers/triggerName5777?api-version=2020-04-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Authorization": "Sanitized",
+        "traceparent": "00-6d38f06e46ea7d4ea8744f2d0533d1d5-b96a931478b32b41-00",
+        "User-Agent": [
+          "azsdk-net-ResourceManager.CosmosDB/1.0.0-alpha.20200922.1",
+          "(.NET Core 4.6.29220.03; Microsoft Windows 10.0.19041 )"
+        ],
+        "x-ms-client-request-id": "e29de951502ef3b6b639285ec1ffb3c1",
+        "x-ms-return-client-request-id": "true"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-store, no-cache",
+        "Content-Length": "745",
+        "Content-Location": "https://management.documents.azure.com:450/subscriptions/c9cbd920-c00c-427c-852b-8aaf38badaeb/resourceGroups/Default-CosmosDB-5063/providers/Microsoft.DocumentDB/databaseAccounts/cosmosdb8086/sqlDatabases/databaseName2439/containers/containerName331/triggers/triggerName5777?api-version=2020-04-01",
+        "Content-Type": "application/json",
+        "Date": "Tue, 22 Sep 2020 10:49:45 GMT",
+        "Pragma": "no-cache",
+        "Server": "Microsoft-HTTPAPI/2.0",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "c166f7fe-4682-4071-a225-be99974cd298",
+        "x-ms-gatewayversion": "version=2.11.0",
+        "x-ms-ratelimit-remaining-subscription-reads": "10419",
+        "x-ms-request-id": "c166f7fe-4682-4071-a225-be99974cd298",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20200922T104946Z:c166f7fe-4682-4071-a225-be99974cd298"
+      },
+      "ResponseBody": {
+        "id": "/subscriptions/c9cbd920-c00c-427c-852b-8aaf38badaeb/resourceGroups/Default-CosmosDB-5063/providers/Microsoft.DocumentDB/databaseAccounts/cosmosdb8086/sqlDatabases/databaseName2439/containers/containerName331/triggers/triggerName5777",
+        "type": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers/triggers",
+        "name": "triggerName5777",
+        "properties": {
+          "resource": {
+            "id": "triggerName5777",
+            "body": "function () { var context = getContext(); var response = context.getResponse();response.setBody(\u0027Hello, World\u0027);}",
+            "triggerType": "Post",
+            "triggerOperation": "All",
+            "_rid": "7PkyAOFWsygBAAAAAAAAcA==",
+            "_self": "dbs/7PkyAA==/colls/7PkyAOFWsyg=/triggers/7PkyAOFWsygBAAAAAAAAcA==/",
+            "_etag": "\u0022e7061966-0000-0100-0000-5f69d6af0000\u0022",
+            "_ts": 1600771759
+          }
+        }
+      }
+    }
+  ],
+  "Variables": {
+    "RandomSeed": "1746047076"
+  }
+}
